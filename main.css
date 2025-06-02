@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  transition: 1s;
+}
+
+.cont {
+  width: 100%;
+  height: 100vh;
+  background-color: #e3f9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc {
+  background-color: #3a4452;
+  padding: 20px;
+  border-radius: 10px;
+  transform: scale(0);
+  animation: none;
+}
+
+input {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+.dis {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.dis input {
+  text-align: right;
+  flex: 1;
+}
+.eq {
+  width: 145px;
+}
+
+button {
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+@keyframes show {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
